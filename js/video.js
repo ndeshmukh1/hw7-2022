@@ -1,6 +1,7 @@
 var video;
 
 window.addEventListener("load", function() {
+	document.querySelector('#volume').innerHTML =  "100%"
 	console.log("Good job opening the window")
 	console.log("Auto play is set to false")
 	console.log("Loop is set to false")
