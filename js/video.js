@@ -1,5 +1,4 @@
 var video;
-
 window.addEventListener("load", function() {
 	console.log("Good job opening the window")
 	console.log("Auto play is set to false")
@@ -8,7 +7,7 @@ window.addEventListener("load", function() {
 	document.querySelector("#play").addEventListener("click", function() {
 		console.log("Play Video");
 		document.querySelector('video').play()
-		document.querySelector('#volume').innerHTML =  "100%"
+		document.querySelector('#volume').innerHTML =  document.querySelector('video').volume * 100 + "%"
 	});
 	document.querySelector("#pause").addEventListener("click", function() {
 		console.log("Pause Video");
